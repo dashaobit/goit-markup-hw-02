@@ -11,8 +11,10 @@
     --primery-text-color: #757575;
     --title-text-color: #212121;
     --acсent-text-color: #2196F3;
-    --adress-text-color: #ffffff;
+    --white-text-color: #ffffff;
     --contact-text-color: rgba(255, 255, 255, 0.6);
+    --primary-background-color: #2196F3;
+    --secondary-background-color: #F5F4FA;
 }
 
  body{
@@ -35,24 +37,31 @@
  .site-nav .link{
      color: var(--title-text-color);
  }
+ .site-nav .link.current{
+      color: var(--acсent-text-color);
+ }
  .site-nav .link:hover, .site-nav .link:focus{
      color: var(--acсent-text-color);
  }
- .contact-nav .link{
+  .contact-nav .link{
      color: var(--primery-text-color);
  }
+
  /* hero */
  .hero-title{
      color: var(--title-text-color);
  }
+
  /* section */
  .section-title{
      color: var(--title-text-color);
  }
+
  /* feature */
  .feature-list .title{
      color: var(--title-text-color);
  }
+
 /* Examples */
 .work-list .title{
     color: var(--title-text-color);
@@ -61,17 +70,34 @@
 .team .title, .team-title{
     color: var(--title-text-color);
 }
+
 /* footer */
 .adress{
-    color: var(--adress-text-color);
+    color: var(--white-text-color);
 }
 .contact{
 color: var(--contact-text-color);
 }
+
 /* portfolio */
 .examples-title{
     color: var(--title-text-color);
 }
-.examples-button{
+/* button */
+.button{
     color: var(--title-text-color);
+}
+/* переопределяет и/или добавляет стили для button */
+.button.primary {
+    color: var(--white-text-color);
+    background-color: var(--primary-background-color);
+}
+.button.secondary{
+    color: var(--title-text-color);
+    background-color: var(--secondary-background-color) ;
+}
+.button.secondary:hover, 
+.button.secondary:focus{
+    color: var(--white-text-color);
+    background-color: var(--primary-background-color);
 }
