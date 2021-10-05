@@ -14,6 +14,7 @@
     --white-text-color: #ffffff;
     --contact-text-color: rgba(255, 255, 255, 0.6);
     --primary-background-color: #2196F3;
+    --primary-background-color-hover:#188CE8;
     --secondary-background-color: #F5F4FA;
 }
 
@@ -91,6 +92,10 @@ color: var(--contact-text-color);
 .button.primary {
     color: var(--white-text-color);
     background-color: var(--primary-background-color);
+}
+.button.primary:hover,
+.button.primary:focus{
+    background-color: var(--primary-background-color-hover);    
 }
 .button.secondary{
     color: var(--title-text-color);
