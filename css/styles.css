@@ -6,22 +6,72 @@
  /* основной цвет фона FFFFFF
  вторичный цвет фона #F5F4FA
  #2F303A */
+/* css var */
+:root{
+    --primery-text-color: #757575;
+    --title-text-color: #212121;
+    --acсent-text-color: #2196F3;
+    --adress-text-color: #ffffff;
+    --contact-text-color: rgba(255, 255, 255, 0.6);
+}
+
  body{
      background-color: FFFFFF;
-     color: #757575;
+     color: var(--primery-text-color);
  }
  .logo{
      color:#2196F3 ;
  }
- .logo-part{
+ header .logo-part{
      color:black;
+ }
+ footer .logo-part{
+     color: #FFFFFF;
  }
  .list{
      list-style: none;
  }
+ /* header */
  .site-nav .link{
-     color: #212121;
+     color: var(--title-text-color);
  }
  .site-nav .link:hover, .site-nav .link:focus{
-     color: #2196F3;
+     color: var(--acсent-text-color);
  }
+ .contact-nav .link{
+     color: var(--primery-text-color);
+ }
+ /* hero */
+ .hero-title{
+     color: var(--title-text-color);
+ }
+ /* section */
+ .section-title{
+     color: var(--title-text-color);
+ }
+ /* feature */
+ .feature-list .title{
+     color: var(--title-text-color);
+ }
+/* Examples */
+.work-list .title{
+    color: var(--title-text-color);
+}
+/* team */
+.team .title, .team-title{
+    color: var(--title-text-color);
+}
+/* footer */
+.adress{
+    color: var(--adress-text-color);
+}
+.contact{
+color: var(--contact-text-color);
+}
+/* portfolio */
+.examples-title{
+    color: var(--title-text-color);
+}
+.examples-button{
+    color: var(--title-text-color);
+}
