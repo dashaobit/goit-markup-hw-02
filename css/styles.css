@@ -1,0 +1,27 @@
+/* палитра основной цвет #757575;
+заголовки #212121;
+белый #FFFFFF;
+акцент #2196F3;
+ */
+ /* основной цвет фона FFFFFF
+ вторичный цвет фона #F5F4FA
+ #2F303A */
+ body{
+     background-color: FFFFFF;
+     color: #757575;
+ }
+ .logo{
+     color:#2196F3 ;
+ }
+ .logo-part{
+     color:black;
+ }
+ .list{
+     list-style: none;
+ }
+ .site-nav .link{
+     color: #212121;
+ }
+ .site-nav .link:hover, .site-nav .link:focus{
+     color: #2196F3;
+ }
