@@ -1,11 +1,12 @@
-/* палитра основной цвет #757575;
+/* палитра
+основной цвет текста #757575;
 заголовки #212121;
 белый #FFFFFF;
 акцент #2196F3;
  */
  /* основной цвет фона FFFFFF
- вторичный цвет фона #F5F4FA
- #2F303A */
+ вторичный цвет фона серый #F5F4FA
+ темный #2F303A */
 /* css var */
 :root{
     --primery-text-color: #757575;
@@ -14,16 +15,23 @@
     --white-text-color: #ffffff;
     --contact-text-color: rgba(255, 255, 255, 0.6);
     --primary-background-color: #2196F3;
-    --primary-background-color-hover:#188CE8;
+    --acсent-background-color:#188CE8;
     --secondary-background-color: #F5F4FA;
 }
 
  body{
      background-color: FFFFFF;
      color: var(--primery-text-color);
+     font-family: Roboto, sans-serif;
+     font-size: 14px;
+     line-height: 1.71;
+     letter-spacing: 0.03em;
  }
  .logo{
-     color:#2196F3 ;
+     color:#2196F3;
+     font-family: Raleway, arial;
+     font-size: 26px;
+    line-height: 1.19;
  }
  header .logo-part{
      color:black;
@@ -34,33 +42,62 @@
  .list{
      list-style: none;
  }
+ 
  /* header */
  .site-nav .link{
      color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
  }
  .site-nav .link.current{
       color: var(--acсent-text-color);
  }
- .site-nav .link:hover, .site-nav .link:focus{
+ .site-nav .link:hover, 
+ .site-nav .link:focus{
      color: var(--acсent-text-color);
  }
   .contact-nav .link{
      color: var(--primery-text-color);
+     font-weight: 500;
+     font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+ }
+ .contact-nav .link:hover,
+ .contact-nav .link:focus{
+     color: var(--acсent-text-color);
  }
 
  /* hero */
  .hero-title{
-     color: var(--title-text-color);
+    color: var(--title-text-color);
+    font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
  }
 
- /* section */
+ /* section общее*/
  .section-title{
-     color: var(--title-text-color);
+    color: var(--title-text-color);
+    font-weight: 700;
+font-size: 36px;
+line-height: 1.17;
+text-align: center;
  }
 
  /* feature */
  .feature-list .title{
-     color: var(--title-text-color);
+    color: var(--title-text-color);
+   font-weight: bold;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
  }
 
 /* Examples */
@@ -75,18 +112,32 @@
 /* footer */
 .adress{
     color: var(--white-text-color);
+    background-color: #2F303A;
 }
-.contact{
-color: var(--contact-text-color);
+.contact-adress .link{
+    color: var(--contact-text-color);
+    background-color: #2F303A;
+}
+.adress:hover,
+.adress:focus,
+.contact-adress .link:hover,
+.contact-adress .link:focus{
+    color: var(--acсent-text-color);
 }
 
 /* portfolio */
+.filter-title,
 .examples-title{
     color: var(--title-text-color);
 }
+.examples-text{
+     color:var(--primery-text-color)
+ }
 /* button */
 .button{
     color: var(--title-text-color);
+    font-family: inherit;
+    cursor: pointer;
 }
 /* переопределяет и/или добавляет стили для button */
 .button.primary {
@@ -95,7 +146,7 @@ color: var(--contact-text-color);
 }
 .button.primary:hover,
 .button.primary:focus{
-    background-color: var(--primary-background-color-hover);    
+    background-color: var(--acсent-background-color);  
 }
 .button.secondary{
     color: var(--title-text-color);
