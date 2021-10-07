@@ -42,7 +42,11 @@
  .list{
      list-style: none;
  }
- 
+ a{
+     text-decoration: none;
+     font-style: normal;
+ }
+
  /* header */
  .site-nav .link{
      color: var(--title-text-color);
@@ -93,7 +97,7 @@ text-align: center;
  /* feature */
  .feature-list .title{
     color: var(--title-text-color);
-   font-weight: bold;
+   font-weight: 700;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.03em;
